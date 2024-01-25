@@ -2,6 +2,13 @@ header {
     background-color: #272727;
     color: white;
     padding: 1rem 2rem;
+    display: flex;
+    align-content: center;
+}
+
+.position {
+    margin-left: 2rem;
+    font-weight: 600;
 }
 
 .logo {
@@ -11,7 +18,4 @@ header {
     height: 2.5rem;
     width: 2.5rem;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

@@ -14,7 +14,7 @@ const Presentation = () => {
             </p>
             <p>
               Decicidí crear este sitio web para todas aquellas personas que
-              deseen concer más detalles acerca de mi experiencia profesional.
+              deseen concer más detalles sobre mi experiencia profesional.
             </p>
             <br />
             <p>
