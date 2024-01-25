@@ -1,0 +1,17 @@
+header {
+    background-color: #272727;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    background-color: white;
+    color: #272727;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
