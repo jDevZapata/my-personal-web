@@ -1,27 +1,16 @@
-import thomson from "../../assets/thomson.png";
-import softtek from "../../assets/softtek.png";
-import globant from "../../assets/globant.png";
-import baufest from "../../assets/baufest.png";
+import companies from "../../constants/companies";
 
 import "./experience.css";
+import CompanyLogo from "../company-logo/CompanyLogo";
 
 const Experienece = () => {
   return (
     <>
       <h1>Empresas en las que trabajé</h1>
       <div className="experience-container">
-        <span className="clickable over">
-          <img src={thomson} alt="Thomson"></img>
-        </span>
-        <span className="clickable">
-          <img src={softtek} alt="Softtek"></img>
-        </span>
-        <span className="clickable">
-          <img src={globant} alt="Globant"></img>
-        </span>
-        <span className="clickable">
-          <img src={baufest} alt="Baufest"></img>
-        </span>
+        {companies.map((company) => (
+          <CompanyLogo key={company.id} company={company} />
+        ))}
       </div>
     </>
   );
