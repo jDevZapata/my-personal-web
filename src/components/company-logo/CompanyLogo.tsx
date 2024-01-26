@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 interface CompanyLogoProps {
   company: {
     id: number;
@@ -7,8 +8,9 @@ interface CompanyLogoProps {
 }
 
 const CompanyLogo = ({ company }: CompanyLogoProps) => {
-  const { name, alt } = company;
+  const { id, name, alt } = company;
   return (
+    <Link to={`/company/${id}`}>
     <span className="clickable company-logo">
       <img
         src={`${process.env.PUBLIC_URL}/images/assets/${name}.png`}
@@ -16,6 +18,7 @@ const CompanyLogo = ({ company }: CompanyLogoProps) => {
         title="más detalles"
       ></img>
     </span>
+    </Link>
   );
 };
 
