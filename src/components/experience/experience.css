@@ -6,15 +6,16 @@ h1 {
 .experience-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  flex-wrap: wrap;
 }
 
 .clickable.company-logo {
   border-radius: 10%;
   display: block;
   background-color: transparent;
-  height: 128px;
-  width: 128px;
+  height: 120px;
+  width: 120px;
+  margin-top: 2rem;
   box-shadow: 0 4px 8px rgba(230, 230, 230, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -26,4 +27,9 @@ h1 {
 .clickable.company-logo:hover {
   background-color: transparent;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+div.experience-container span.see-more-link {
+  text-decoration: none;
+  font-weight: 600;
 }

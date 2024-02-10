@@ -2,25 +2,28 @@ import "./presentation.css";
 
 const Presentation = () => {
   return (
-    <main>
+    <>
+      <h1 className="title-centered">Frontend Developer</h1>
       <div className="presentation-container">
         <div className="presentation">
           <div>
             <p>
-              Hola! mi nombre es Jesús Müller y soy desarrollador Frontend con
+              Hola! mi nombre es Jesús y soy desarrollador Frontend con
               más de 10 años de experiencia, graduado en la tecnicatura
               universitaria "Analista de Sistemas" de la Universidad John F.
               Kennedy.
             </p>
             <p>
-              Decicidí crear este sitio web para todas aquellas personas que
-              deseen concer más detalles sobre mi experiencia profesional.
+              Decicidí crear este sitio web para todas las personas que
+              deseen conocer más detalles sobre mi experiencia profesional.
             </p>
             <br />
             <p>
-              "El éxito no es la clave de la felicidad. La felicidad es la clave
-              del éxito. Si amas lo que haces, tendrás éxito." - Albert
-              Schweitzer
+              <span className="phrase">
+                "El éxito no es la clave de la felicidad. La felicidad es la
+                clave del éxito. Si amas lo que haces, tendrás éxito." - Albert
+                Schweitzer
+              </span>
             </p>
           </div>
           <span className="centered-img">
@@ -39,7 +42,7 @@ const Presentation = () => {
           </span>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 
