@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Content />}></Route>
           <Route path="/company/:id" element={<CompanyDescription />}></Route>

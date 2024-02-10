@@ -1,13 +1,17 @@
 main {
-  background-color: #f0eded;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
+}
+
+h1.title-centered {
+  text-align: center;
 }
 
 .presentation-container {
   display: flex;
   justify-content: center;
   font-style: italic;
+  padding: 2rem 1rem;
 }
 
 main .presentation {
@@ -15,7 +19,7 @@ main .presentation {
   width: 50vw;
   justify-content: space-between;
   border-radius: 1rem;
-  border: 2px solid black;
+  border: 2px solid #d5d5d5;
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -26,13 +30,37 @@ main .presentation {
 }
 
 .presentation .profile {
-  height: 8vw;
+  height: 170px;
   border-radius: 50%;
-  margin-left: 1rem;
+}
+
+.presentation .phrase {
+  font-weight: 500;
 }
 
 .centered-img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  main .presentation {
+    padding: unset;
+    border: none;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .presentation .hand {
+    display: none;
+  }
+  .presentation .profile {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  main .presentation {
+    width: 80vw;
+  }
 }

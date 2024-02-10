@@ -1,4 +1,23 @@
 .company-description {
-    margin-top: 72px;
-    padding: 2rem;
+  margin-top: 72px;
+  padding: 2rem;
+}
+
+.company-description .company-title,
+.company-description p {
+  margin-bottom: 1.5rem;
+}
+
+.company-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-title img {
+  opacity: 0.7;
+}
+
+.company-description .links a {
+  margin-left: 10px;
 }

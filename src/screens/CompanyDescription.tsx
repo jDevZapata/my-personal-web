@@ -9,11 +9,13 @@ const CompanyDescription = () => {
   const [company, setCompany] = useState<{
     id: number;
     name: string;
+    img: string;
     description: string;
     myExperience: string[];
+    experienceLinks: { label: string; link: string }[];
     technologies: string[];
     projects: string[];
-    workedTime: { from: string, to: string};
+    workedTime: { from: string; to: string };
   }>();
 
   useEffect(() => {
@@ -25,14 +27,35 @@ const CompanyDescription = () => {
     <div className="company-description">
       {company && (
         <>
-          <h2>{company.name}</h2>
+          <div className="company-title">
+            <h2>{company.name}</h2>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/assets/${company.img}.png`}
+              alt={company.name}
+            ></img>
+          </div>
           <p>{company.description}</p>
           {company.myExperience.map((paragraph) => (
             <p>{paragraph}</p>
           ))}
-          <p>Trabajé con las siguientes tecnologías: {company.technologies.join(", ")}.</p>
-          <p>Proyectos en los que participé: {company.projects.join(", ")}.</p>
-          <p>Tiempo trabajado: {company.workedTime.from} hasta {company.workedTime.to}</p>
+          <p className="links">
+            Links Utiles:
+            {company.experienceLinks.map((experienece) => (
+              <a href={experienece.link} target="_blank" rel="noreferrer">
+                {`${experienece.label} `}
+              </a>
+            ))}
+          </p>
+          <p>
+            Tecnologías: <b>{company.technologies.join(", ")}.</b>
+          </p>
+          <p>
+            Proyectos: <b>{company.projects.join(", ")}.</b>
+          </p>
+          <p>
+            Tiempo trabajado: {company.workedTime.from} hasta{" "}
+            {company.workedTime.to}
+          </p>
         </>
       )}
     </div>
