@@ -14,7 +14,7 @@ const CompanyDescription = () => {
     myExperience: string[];
     experienceLinks: { label: string; link: string }[];
     technologies: string[];
-    projects: string[];
+    projects?: string[];
     workedTime: { from: string; to: string };
   }>();
 
@@ -50,9 +50,11 @@ const CompanyDescription = () => {
           <p>
             Tecnologías: <b>{company.technologies.join(", ")}.</b>
           </p>
-          <p>
-            Proyectos: <b>{company.projects.join(", ")}.</b>
-          </p>
+          {company.projects && (
+            <p>
+              Proyectos: <b>{company.projects.join(", ")}.</b>
+            </p>
+          )}
           <p>
             Tiempo trabajado: {company.workedTime.from} hasta{" "}
             {company.workedTime.to}
