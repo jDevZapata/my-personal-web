@@ -14,10 +14,12 @@
   justify-content: space-between;
 }
 
-.company-title img {
-  opacity: 0.7;
-}
-
 .company-description .links a {
   margin-left: 10px;
+}
+
+.company-title .company-logo {
+  opacity: 0.85;
+  height: 100px;
+  border-radius: 10px;
 }

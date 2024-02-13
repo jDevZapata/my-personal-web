@@ -39,7 +39,7 @@ const details = [
       "TFS",
       "Scrum",
       "Kanban",
-      "Jira"
+      "Jira",
     ],
     projects: [
       "La Ley (Argentina, Brasil, Uruguay, Chile, Perú)",
@@ -47,6 +47,49 @@ const details = [
       "Westlaw India",
     ],
     workedTime: { from: "2013", to: "2016" },
+  },
+  {
+    id: 2016,
+    name: "Softtek",
+    img: "softtek",
+    description:
+      "Softtek es una empresa líder en servicios de tecnología y soluciones de negocio, comprometida con la transformación digital de las organizaciones. Desde su fundación en 1982 en México, ha sido pionera en ofrecer servicios de vanguardia que impulsan la eficiencia operativa y la innovación en diversas industrias.",
+    myExperience: [
+      "En Softtek, tuve la oportunidad de trabajar con tecnologías de vanguardia y colaborar con clientes de diversos sectores gracias a la amplia cartera de servicios de la empresa en el área de tecnología de la información.",
+      "Durante casi dos años, fui consultor para OSDE, una empresa de servicios de salud, donde lideré la formación de equipos para proyectos de modernización del sitio web y la implementación de Google Analytics en toda la plataforma.",
+      "También participé en el desarrollo de una aplicación web interna para visualizar estadísticas de las interacciones de los usuarios, proporcionando análisis en forma de gráficos que facilitaron la toma de decisiones por parte del equipo directivo. En este proyecto, contribuí al diseño de servicios web SOAP consumidos por la interfaz de usuario que estábamos construyendo simultáneamente.",
+    ],
+    experienceLinks: [
+      {
+        label: "OSDE",
+        link: "https://www.osde.com.ar/index.html",
+      }
+    ],
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "Angular",
+      "Javascript",
+      "Typescript",
+      "Jquery",
+      "XML",
+      "Json",
+      "Java",
+      "Hibernate",
+      "SQL",
+      "Tortoise SVN",
+      "Git",
+      "Postman",
+      "Win SCP",
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "Trello"
+    ],
+    projects: [
+      "OSDE"
+    ],
+    workedTime: { from: "2016", to: "2018" },
   },
 ];
 
