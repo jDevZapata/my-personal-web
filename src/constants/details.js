@@ -40,6 +40,7 @@ const details = [
       "Scrum",
       "Kanban",
       "Jira",
+      "Jenkins"
     ],
     projects: [
       "La Ley (Argentina, Brasil, Uruguay, Chile, Perú)",
@@ -71,6 +72,7 @@ const details = [
       "Angular",
       "Javascript",
       "Typescript",
+      "ES5",
       "Jquery",
       "XML",
       "Json",
@@ -90,6 +92,52 @@ const details = [
       "OSDE"
     ],
     workedTime: { from: "2016", to: "2018" },
+  },
+  {
+    id: 2018,
+    name: "Globant",
+    img: "globant",
+    description:
+      "Globant es una empresa multinacional de tecnología y servicios de consultoría con sede en Argentina. Fundada en 2003, Globant se ha destacado como líder en la industria de la transformación digital, ofreciendo servicios de vanguardia en áreas como desarrollo de software, experiencia del usuario, inteligencia artificial, realidad aumentada y más.",
+    myExperience: [
+      "En Globant, tuve la oportunidad de colaborar con equipos multiculturales y trabajar completamente en inglés. Además, adquirí conocimientos sobre las mejores prácticas en desarrollo.",
+      "Durante mi tiempo en Globant, trabajé como consultor para JP Morgan, uno de los bancos más grandes de América del Norte, en proyectos internos sujetos a confidencialidad. Aunque no puedo compartir detalles específicos debido a acuerdos de confidencialidad, puedo mencionar que implementamos las mejores prácticas en desarrollo, como TDD, Redux, Pair programming, Peer review, CI/CD y despliegues automáticos en la nube.",
+      "Mi experiencia en Globant también me permitió conocer personas maravillosas y sumergirme en culturas enriquecedoras, especialmente las culturas de la India, Francesa y Suiza.",
+    ],
+    experienceLinks: [
+      {
+        label: "JP Morgan",
+        link: "https://www.jpmorgan.com/AR/en/about-us",
+      }
+    ],
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "Styled Components",
+      "React",
+      "Javascript",
+      "ES6",
+      "Typescript",
+      "JP Morgan CL",
+      "redux",
+      "jest",
+      "enzyme",
+      "webpack",
+      "TDD",
+      "Testing coverage",
+      "babel",
+      "fetch",
+      "Json",
+      "Git",
+      "Bitbucket",
+      "Postman",
+      "Win SCP",
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "Jenkins"
+    ],
+    workedTime: { from: "2018", to: "2019" },
   },
 ];
 
