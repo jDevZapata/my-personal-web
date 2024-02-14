@@ -1,0 +1,12 @@
+.goBackLink {
+    display: flex;
+    align-items: center;    
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: #2a2a6e;
+    font-weight: 700;
+}
+
+.goBackLink .back_btn {
+    height: 26px;
+}

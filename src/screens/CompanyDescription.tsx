@@ -2,6 +2,7 @@ import "./company-description.css";
 import details from "../constants/details";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import GoBackButton from "../components/go-back-button/GoBackButton";
 
 const CompanyDescription = () => {
   const { id } = useParams();
@@ -25,6 +26,7 @@ const CompanyDescription = () => {
 
   return (
     <div className="company-description">
+      <GoBackButton />
       {company && (
         <>
           <div className="company-title">
