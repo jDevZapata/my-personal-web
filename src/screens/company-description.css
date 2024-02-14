@@ -1,5 +1,5 @@
 .company-description {
-  margin-top: 72px;
+  margin-top: 60px;
   padding: 2rem;
 }
 
@@ -16,6 +16,8 @@
 
 .company-description .links a {
   margin-left: 10px;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .company-title .company-logo {

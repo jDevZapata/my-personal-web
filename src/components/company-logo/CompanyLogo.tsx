@@ -10,7 +10,7 @@ interface CompanyLogoProps {
 const CompanyLogo = ({ company }: CompanyLogoProps) => {
   const { id, name, alt } = company;
   return (
-    <Link to={`/company/${id}`}>
+    <Link to={`/company/${id}`} style={{ textDecoration: "none" }}>
       <span className="clickable company-logo">
         <img
           src={`${process.env.PUBLIC_URL}/images/assets/${name}.png`}
