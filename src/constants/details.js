@@ -139,6 +139,66 @@ const details = [
     ],
     workedTime: { from: "2018", to: "2019" },
   },
+  {
+    id: 2019,
+    name: "Baufest",
+    img: "baufest",
+    description:
+      "Baufest es una empresa de servicios de tecnología con una amplia trayectoria en el mercado. Fundada en Argentina en 1991, Baufest se ha expandido a nivel global, estableciendo operaciones en varios países de América Latina, Estados Unidos y Europa. La empresa se especializa en ofrecer soluciones tecnológicas innovadoras y personalizadas para satisfacer las necesidades de sus clientes en áreas como desarrollo de software, consultoría tecnológica, inteligencia artificial, transformación digital y más.",
+    myExperience: [
+      "En Baufest, tuve el privilegio de colaborar con diversos clientes, incluyendo a Warner, ICBC, Pont y en una aplicación interna llamada Bit Certs.",
+      "Durante mi primer año, trabajé en proyectos para Warner. desarrollando aplicaciones web internas para la gestión de contratos publicitarios dentro de programas de la cadena, como ESPN, Cartoon Network, Nickelodeon, entre otros (utilizando Angular).",
+      "En los dos años siguientes, formé parte del equipo que trabajó para ICBC (Banco Industrial y Comercial de China), donde contribuímos al desarrollo de varias aplicaciones, incluyendo el Legajo Digital para los socios del banco y una aplicación móvil híbrida llamada Préstamos Prendarios para concesionarios asociados al banco (utilizando Angular).",
+      "Desde el año 2022, participé brevemente en el proyecto Nera (Préstamos Agro) del Banco Galicia, para luego unirme al proyecto PONT (Préstamos Agro de un grupo privado) y, en los últimos meses, trabajar en Bit Certs (certificados digitales verificables en la blockchain de Ethereum) (utilizando React).",
+      "En todos estos proyectos, nos dedicamos a mantener rigurosamente las mejores prácticas de desarrollo. Además, tuve el honor de desempeñar roles de tutor y profesor en programas de entrenamiento intensivo, realizar presentaciones de demostración a clientes, brindar apoyo técnico a mis compañeros a través de clases grupales, y también liderar y ser referente técnico frontend en los equipos en los que trabajé y también de la empresa.",
+      "Fue un privilegio trabajar con profesionales de distintas partes del mundo y tener la oportunidad de pasar un año trabajando en mi ciudad natal, Lima, Perú."
+    ],
+    experienceLinks: [
+      {
+        label: "ICBC",
+        link: "https://www.icbc.com.ar/personas"
+      },{
+        label: "Warner",
+        link: "https://warnermedialatam.com/"
+      },{
+        label: "BIT Certs",
+        link: "https://www.linkedin.com/posts/baufest_qu%C3%A9-es-el-bit-y-las-bitcerts-activity-7133841925576568832-rlq3/?trk=public_profile_like_view&originalSubdomain=es",
+      }
+    ],
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "Angular",
+      "React",
+      "Javascript",
+      "Typescript",
+      "ES6",
+      "MUI",
+      "Bootstrap",
+      "Material design",
+      "ICBC CL",
+      "Redux",
+      "Formik",
+      "Jest",
+      "React testing library",
+      "Karma",
+      "Jazmine",
+      "CRA",
+      "Rxjs",
+      "i18n",
+      "axios",
+      "Git",
+      "Postman",
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "Miro"
+    ],
+    projects: [
+      "Warner", "ICBC Legajo Digital", "ICBC Prendarios", "Nera", "Pont", "Bit certs"
+    ],
+    workedTime: { from: "2019", to: "2024" },
+  }
 ];
 
 export default details;
