@@ -5,14 +5,14 @@ import CompanyLogo from "../company-logo/CompanyLogo";
 
 const Experienece = () => {
   return (
-    <>
-      <h1>Empresas en las que trabajé</h1>
+    <section id="companies">
+      <h2>Empresas en las que trabajé</h2>
       <div className="experience-container">
         {companies.map((company) => (
           <CompanyLogo key={company.id} company={company} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

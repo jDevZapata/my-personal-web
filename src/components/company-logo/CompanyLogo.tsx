@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
-interface CompanyLogoProps {
-  company: {
-    id: number;
-    name: string;
-    alt: string;
-  };
-}
+import { CompanyLogoProps } from "../../types/logo";
 
 const CompanyLogo = ({ company }: CompanyLogoProps) => {
   const { id, name, alt } = company;

@@ -3,21 +3,11 @@ import details from "../constants/details";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import GoBackButton from "../components/go-back-button/GoBackButton";
+import { CompanyDescriptionProps } from "../types/companyDescription";
 
 const CompanyDescription = () => {
   const { id } = useParams();
-
-  const [company, setCompany] = useState<{
-    id: number;
-    name: string;
-    img: string;
-    description: string;
-    myExperience: string[];
-    experienceLinks: { label: string; link: string }[];
-    technologies: string[];
-    projects?: string[];
-    workedTime: { from: string; to: string };
-  }>();
+  const [company, setCompany] = useState<CompanyDescriptionProps>();
 
   useEffect(() => {
     const comp = details.find((detail) => detail.id === Number(id));
