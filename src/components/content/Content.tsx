@@ -1,3 +1,4 @@
+import Education from "../education/Education";
 import Experienece from "../experience/Experience";
 import Presentation from "../presentation/Presentation";
 
@@ -6,6 +7,7 @@ const Content = () => {
     <main>
       <Presentation />
       <Experienece />
+      <Education />
     </main>
   );
 };

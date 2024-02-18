@@ -1,0 +1,17 @@
+section h2.title {
+  margin-top: 2rem;
+}
+
+section[id="education"] .description {
+  margin-top: 1rem;
+}
+
+section[id="education"] .description p {
+  margin-bottom: 1rem;
+}
+
+section[id="education"] .description a {
+  margin-left: 10px;
+  text-decoration: underline;
+  font-weight: 600;
+}

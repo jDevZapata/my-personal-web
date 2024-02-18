@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import left from '../../assets/left.png';
+import left from '../../assets/icons/left.png';
 import './gobackbutton.css';
 
 const GoBackButton = () => {

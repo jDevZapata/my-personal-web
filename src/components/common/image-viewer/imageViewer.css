@@ -1,0 +1,39 @@
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.image-popup {
+    height: 480px;
+    width: 700px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.image-popup .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #adadad;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.image-popup .image img {
+    height: 420px;
+}
+
+.close_btn {
+    height: 15px;
+    padding: 10px;
+}
