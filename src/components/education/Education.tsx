@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./education.css";
+import ImageViewer from "../common/image-viewer/ImageViewer";
+import diploma from "../../assets/education/diploma.jpg";
 
 const Education = () => {
+  const [showDiploma, setShowDiploma] = useState(false);
+
   return (
     <section id="education">
       <h2 className="title">Estudios</h2>
@@ -29,6 +34,7 @@ const Education = () => {
           informática. Como complemento, sólidos conocimientos de matemática,
           inglés técnico y probabilidad y estadística.
         </p>
+        <button onClick={() => setShowDiploma(true)}>ver diploma</button>
       </div>
       <h2 className="title">Certificaciones</h2>
       <div className="description">
@@ -50,6 +56,14 @@ const Education = () => {
             Git - Integración continua
           </a>
         </p>
+        {showDiploma && (
+          <ImageViewer
+            title="Diploma"
+            closeImageViewer={async () => setShowDiploma(false)}
+          >
+            <img src={diploma} alt="diploma" className="diploma" />
+          </ImageViewer>
+        )}
       </div>
     </section>
   );
