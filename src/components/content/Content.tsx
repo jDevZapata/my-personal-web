@@ -1,6 +1,7 @@
 import Education from "../education/Education";
 import Experienece from "../experience/Experience";
 import Presentation from "../presentation/Presentation";
+import Technologies from "../technologies/Technologies";
 
 const Content = () => {
   return (
@@ -8,6 +9,7 @@ const Content = () => {
       <Presentation />
       <Experienece />
       <Education />
+      <Technologies />
     </main>
   );
 };

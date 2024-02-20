@@ -41,7 +41,7 @@ const Education = () => {
           inglés técnico y probabilidad y estadística.
         </p>
         {
-          <span onClick={() => setShowImageViewer(true)} className="show-diploma clickable">
+          <span onClick={() => setShowImageViewer(true)} className="show-diploma clickable link">
             <img src={diplomaIcon} alt="diploma" className="diploma-icon"></img>Ver diploma
           </span>
         }
@@ -55,6 +55,7 @@ const Education = () => {
             href="https://www.udemy.com/certificate/UC-78708101-b8dd-4068-9296-2c30c6cc7ba1/"
             target="_blank"
             rel="noreferrer"
+            className="link"
           >
             React - Guía definitiva
           </a>
@@ -62,6 +63,7 @@ const Education = () => {
             href="https://www.udemy.com/certificate/UC-104025bc-a6f0-4106-b041-d71dad522fe6/"
             target="_blank"
             rel="noreferrer"
+            className="link"
           >
             Git - Integración continua
           </a>
