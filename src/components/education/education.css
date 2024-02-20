@@ -15,3 +15,15 @@ section[id="education"] .description a {
   text-decoration: underline;
   font-weight: 600;
 }
+
+.show-diploma {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: #353596;
+}
+
+.show-diploma .diploma-icon {
+  height: 30px;
+  margin-right: 5px;
+}

@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import { useImageViewerContext } from "../../context/ImageViewerContext";
+import diploma from "../../assets/education/diploma.png";
+import diplomaIcon from "../../assets/icons/diploma.png";
 import "./education.css";
-import ImageViewer from "../common/image-viewer/ImageViewer";
-import diploma from "../../assets/education/diploma.jpg";
 
 const Education = () => {
-  const [showDiploma, setShowDiploma] = useState(false);
+  const { setShowImageViewer, setTitle, setImgUrl } = useImageViewerContext();
+
+  useEffect(() => {
+    setTitle("Diploma");
+    setImgUrl(diploma);
+  }, [setImgUrl, setTitle]);
 
   return (
     <section id="education">
@@ -34,7 +40,11 @@ const Education = () => {
           informática. Como complemento, sólidos conocimientos de matemática,
           inglés técnico y probabilidad y estadística.
         </p>
-        <button onClick={() => setShowDiploma(true)}>ver diploma</button>
+        {
+          <span onClick={() => setShowImageViewer(true)} className="show-diploma clickable">
+            <img src={diplomaIcon} alt="diploma" className="diploma-icon"></img>Ver diploma
+          </span>
+        }
       </div>
       <h2 className="title">Certificaciones</h2>
       <div className="description">
@@ -56,14 +66,6 @@ const Education = () => {
             Git - Integración continua
           </a>
         </p>
-        {showDiploma && (
-          <ImageViewer
-            title="Diploma"
-            closeImageViewer={async () => setShowDiploma(false)}
-          >
-            <img src={diploma} alt="diploma" className="diploma" />
-          </ImageViewer>
-        )}
       </div>
     </section>
   );
