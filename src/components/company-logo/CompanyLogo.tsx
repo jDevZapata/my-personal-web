@@ -12,7 +12,7 @@ const CompanyLogo = ({ company }: CompanyLogoProps) => {
           title="más detalles"
         ></img>
       </span>
-      <span className="see-more-link">Ver más</span>
+      <span className="see-more-link link">Ver más</span>
     </Link>
   );
 };

@@ -34,7 +34,7 @@ const CompanyDescription = () => {
           <p className="links">
             Links Utiles:
             {company.experienceLinks.map((experienece) => (
-              <a href={experienece.link} target="_blank" rel="noreferrer">
+              <a href={experienece.link} target="_blank" rel="noreferrer"className="link">
                 {`${experienece.label} `}
               </a>
             ))}
