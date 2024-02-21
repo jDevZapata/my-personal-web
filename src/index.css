@@ -8,13 +8,26 @@
 }
 
 .link {
-  color: #2727f7;
+  color: #0063c5;
 }
 
 .centered-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title-contaier {
+  display: flex;
+  align-items: end;
+}
+
+.title-contaier h2 {
+  margin-right: 10px;
+}
+
+.title-contaier .icon {
+  height: 30px;
 }
 
 body {
@@ -24,7 +37,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff8dc;
+  background-color: #eaeaea;
+}
+
+main {
+  padding-top: 2rem;
+  margin-top: 4rem;
 }
 
 code {

@@ -1,6 +1,5 @@
-main {
-  padding: 2rem;
-  margin-top: 4rem;
+section[id="presentation"] {
+  padding: 0 2rem 2rem;
 }
 
 h1.title-centered {
@@ -14,9 +13,9 @@ h1.title-centered {
   padding: 2rem 1rem;
 }
 
-main .presentation {
+.presentation-container .presentation {
   display: flex;
-  width: 50vw;
+  width: 70vw;
   justify-content: space-between;
   border-radius: 1rem;
   border: 2px solid #d5d5d5;
@@ -45,7 +44,7 @@ main .presentation {
 }
 
 @media only screen and (max-width: 800px) {
-  main .presentation {
+  .presentation-container .presentation {
     padding: unset;
     border: none;
     width: 100%;

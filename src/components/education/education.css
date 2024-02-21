@@ -1,5 +1,7 @@
-section h2.title {
-  margin-top: 2rem;
+section[id="education"] {
+  padding: 2rem;
+  background-color: #333333;
+  color: #fff;
 }
 
 section[id="education"] .description {
@@ -16,6 +18,10 @@ section[id="education"] .description a {
   font-weight: 600;
 }
 
+div.certifications  {
+  margin-top: 2rem;
+}
+
 .show-diploma {
   display: inline-flex;
   align-items: center;
@@ -24,5 +30,5 @@ section[id="education"] .description a {
 
 .show-diploma .diploma-icon {
   height: 30px;
-  margin-right: 5px;
+  margin-right: 10px;
 }

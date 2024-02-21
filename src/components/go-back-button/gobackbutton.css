@@ -1,9 +1,9 @@
 .goBackLink {
-    display: flex;
+    display: inline-flex;
     align-items: center;    
     margin-bottom: 1rem;
     font-size: 20px;
-    color: #2a2a6e;
+    color: #000;
     font-weight: 700;
 }
 
