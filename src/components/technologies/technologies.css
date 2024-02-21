@@ -1,3 +1,8 @@
+section[id="technologies"] {
+  padding: 2rem;
+  background-color: #f5f5dc;
+}
+
 section[id="technologies"] .description {
   margin-top: 1rem;
 }

@@ -1,0 +1,31 @@
+footer {
+    background-color: #d3d3d3;
+    padding: 2rem;
+}
+
+.personal-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+.social-media .icon {
+    height: 35px;
+}
+
+.info-container {
+    display: inline-flex;
+    align-items: end;
+    margin-top: 1rem;
+    margin-right: 15px;
+}
+
+footer .icon {
+    height: 20px;
+    margin-right: 5px;
+}

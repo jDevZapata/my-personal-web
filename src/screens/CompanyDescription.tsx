@@ -25,7 +25,7 @@ const CompanyDescription = () => {
               src={`${process.env.PUBLIC_URL}/images/assets/${company.img}.png`}
               alt={company.name}
               className="company-logo"
-            ></img>
+            />
           </div>
           <p>{company.description}</p>
           {company.myExperience.map((paragraph) => (
