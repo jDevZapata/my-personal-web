@@ -20,7 +20,7 @@ footer {
 
 .info-container {
     display: inline-flex;
-    align-items: end;
+    align-items: flex-end;
     margin-top: 1rem;
     margin-right: 15px;
 }
