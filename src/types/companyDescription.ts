@@ -4,7 +4,7 @@ interface CompanyDescription {
     img: string;
     description: string;
     myExperience: string[];
-    experienceLinks: { label: string; link: string }[];
+    experienceLinks: { id: number, label: string; link: string }[];
     technologies: string[];
     projects?: string[];
     workedTime: { from: string; to: string };

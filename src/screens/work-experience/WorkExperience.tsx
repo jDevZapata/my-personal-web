@@ -8,15 +8,15 @@ import { CompanyDescription } from "../../types/companyDescription";
 const WorkExperience = () => {
   const { id } = useParams();
   const [company, setCompany] = useState<CompanyDescription>();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     const comp = details.find((detail) => detail.id === Number(id));
-    (comp) ? setCompany(comp) : navigate("/not-found")
+    comp ? setCompany(comp) : navigate("/not-found");
   }, [id, navigate]);
 
   return (
-    <div className="company-description">
+    <div className="company-description" data-testid="work-experience">
       <GoBackButton />
       {company && (
         <>
@@ -29,13 +29,14 @@ const WorkExperience = () => {
             />
           </div>
           <p>{company.description}</p>
-          {company.myExperience.map((paragraph) => (
-            <p>{paragraph}</p>
+          {company.myExperience.map((paragraph, i) => (
+            <p key={"wed" + i}>{paragraph}</p>
           ))}
           <p className="links">
             Links Utiles:
             {company.experienceLinks.map((experienece) => (
               <a
+                key={experienece.id}
                 href={experienece.link}
                 target="_blank"
                 rel="noreferrer"

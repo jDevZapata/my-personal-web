@@ -13,14 +13,17 @@ const details = [
     ],
     experienceLinks: [
       {
+        id: 1001,
         label: "La Ley Online",
         link: "https://support.rg.thomsonreuters.com/laley/Gu%C3%ADadeuso.pdf",
       },
       {
+        id: 1002,
         label: "Westlaw Uk",
         link: "https://www.nup.ac.cy/wp-content/uploads/2020/09/Westlaw-UK-Student-User-Guide.pdf",
       },
       {
+        id: 1003,
         label: "Westlaw India",
         link: "https://main.sci.gov.in/pdf/Library/Westlaw%20India%20Manual.pdf",
       },
@@ -62,6 +65,7 @@ const details = [
     ],
     experienceLinks: [
       {
+        id: 1004,
         label: "OSDE",
         link: "https://www.osde.com.ar/index.html",
       }
@@ -106,6 +110,7 @@ const details = [
     ],
     experienceLinks: [
       {
+        id: 1005,
         label: "JP Morgan",
         link: "https://www.jpmorgan.com/AR/en/about-us",
       }
@@ -155,12 +160,15 @@ const details = [
     ],
     experienceLinks: [
       {
+        id: 1006,
         label: "ICBC",
         link: "https://www.icbc.com.ar/personas"
       },{
+        id: 1007,
         label: "Warner",
         link: "https://warnermedialatam.com/"
       },{
+        id: 1008,
         label: "BIT Certs",
         link: "https://www.linkedin.com/posts/baufest_qu%C3%A9-es-el-bit-y-las-bitcerts-activity-7133841925576568832-rlq3/?trk=public_profile_like_view&originalSubdomain=es",
       }

@@ -5,7 +5,7 @@ import Technologies from "../../components/technologies/Technologies";
 
 const Home = () => {
   return (
-    <main>
+    <main data-testid="home">
       <Presentation />
       <Experienece />
       <Education />
