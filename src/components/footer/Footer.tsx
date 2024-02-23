@@ -14,7 +14,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer>
+    <footer  data-testid="footer">
       <h4>Información de contacto</h4>
       <div className="personal-information">
         <div className="info-container">

@@ -14,7 +14,7 @@ const ImageViewer = () => {
           onClick={() => setShowImageViewer(false)}
         ></div>
       )}
-      <div className={`image-popup ${showImageViewer ? "toUp" : "toDown"}`}>
+      <div className={`image-popup ${showImageViewer ? "toUp" : "toDown"}`} data-testid="image-viewer">
         <span className="title">
           <h4>{title}</h4>
           <img

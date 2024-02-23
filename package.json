@@ -20,8 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "coverage": "npm test -- --coverage --watchAll",
+    "test": "react-scripts test --verbose",
+    "coverage": "npm test -- --coverage --watchAll --verbose",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,7 +37,6 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,ts,tsx,jsx}",
-      "!src/index.tsx",
       "!src/react-app-env.d.ts"
     ]
   },
