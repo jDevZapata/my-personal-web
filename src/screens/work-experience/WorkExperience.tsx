@@ -1,18 +1,19 @@
-import "./company-description.css";
-import details from "../constants/details";
-import { useParams } from "react-router-dom";
+import "./work-experience.css";
+import details from "../../constants/details";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import GoBackButton from "../components/go-back-button/GoBackButton";
-import { CompanyDescriptionProps } from "../types/companyDescription";
+import GoBackButton from "../../components/go-back-button/GoBackButton";
+import { CompanyDescription } from "../../types/companyDescription";
 
-const CompanyDescription = () => {
+const WorkExperience = () => {
   const { id } = useParams();
-  const [company, setCompany] = useState<CompanyDescriptionProps>();
+  const [company, setCompany] = useState<CompanyDescription>();
+  const navigate = useNavigate()
 
   useEffect(() => {
     const comp = details.find((detail) => detail.id === Number(id));
-    setCompany(comp);
-  }, [id]);
+    (comp) ? setCompany(comp) : navigate("/not-found")
+  }, [id, navigate]);
 
   return (
     <div className="company-description">
@@ -34,7 +35,12 @@ const CompanyDescription = () => {
           <p className="links">
             Links Utiles:
             {company.experienceLinks.map((experienece) => (
-              <a href={experienece.link} target="_blank" rel="noreferrer"className="link">
+              <a
+                href={experienece.link}
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
                 {`${experienece.label} `}
               </a>
             ))}
@@ -57,4 +63,4 @@ const CompanyDescription = () => {
   );
 };
 
-export default CompanyDescription;
+export default WorkExperience;

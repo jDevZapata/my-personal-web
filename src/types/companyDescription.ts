@@ -1,4 +1,4 @@
-interface CompanyDescriptionProps {
+interface CompanyDescription {
     id: number;
     name: string;
     img: string;
@@ -10,4 +10,4 @@ interface CompanyDescriptionProps {
     workedTime: { from: string; to: string };
 }
 
-export type { CompanyDescriptionProps }
+export type { CompanyDescription }

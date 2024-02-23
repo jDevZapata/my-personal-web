@@ -18,7 +18,7 @@ const Technologies = () => {
       </div>
       <div className="technologies-container">
         {technologies.map((technology: Technology) => (
-          <span className="technology">
+          <span key={technology.id} className="technology">
             <img src={technology.icon} alt="" className="tech-icon"/>
             {technology.name}
           </span>
