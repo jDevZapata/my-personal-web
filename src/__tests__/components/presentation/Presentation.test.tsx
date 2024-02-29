@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Presentation from "../../../components/presentation/Presentation";
 
-describe("GoBackButton component", () => {
+describe("Presentation component", () => {
   test("should render position in a title", () => {
     render(<Presentation />);
     const position = screen.getByText("Frontend Developer");

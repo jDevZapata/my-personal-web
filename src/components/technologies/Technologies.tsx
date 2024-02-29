@@ -7,7 +7,7 @@ const Technologies = () => {
   return (
     <section id="technologies" data-testid="technologies">
       <div className="title-contaier">
-        <h2 className="title">Technologias</h2>
+        <h2 className="title">Tecnologías</h2>
         <img src={programmingIcon} alt="techs" className="icon"/>
       </div>
       <div className="description">
