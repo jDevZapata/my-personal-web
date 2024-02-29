@@ -5,7 +5,7 @@ import "./experience.css";
 
 const Experienece = () => {
   return (
-    <section id="experience">
+    <section id="experience" data-testid="experience">
       <div className="title-contaier">
         <h2>Experiencia laboral</h2>
         <img src={workExperienceIcon} alt="experience" className="icon"/>
