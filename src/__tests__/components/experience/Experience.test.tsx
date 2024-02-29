@@ -13,13 +13,19 @@ describe("Experience component", () => {
     expect(experienceTxt).toBeInTheDocument();
   });
 
-  test("should render company logo link", () => {
+  test("should render companies logos", () => {
     render(
       <MemoryRouter>
         <Experienece />
       </MemoryRouter>
     );
-    const companyLogoElement = screen.getByTestId("company-logo-2013");
-    expect(companyLogoElement).toBeInTheDocument();
+    const thomsonElement = screen.getByTestId("company-logo-2013");
+    const softtekElement = screen.getByTestId("company-logo-2016");
+    const globantElement = screen.getByTestId("company-logo-2018");
+    const baufestElement = screen.getByTestId("company-logo-2019");
+    expect(thomsonElement).toBeInTheDocument();
+    expect(softtekElement).toBeInTheDocument();
+    expect(globantElement).toBeInTheDocument();
+    expect(baufestElement).toBeInTheDocument();
   });
 });
