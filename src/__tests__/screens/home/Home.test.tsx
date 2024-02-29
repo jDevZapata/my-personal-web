@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import Home from "../../screens/home/Home";
-import { MemoryRouter } from "react-router";
-import { ImageViewerProvider } from "../../context/ImageViewerContext";
+import { MemoryRouter } from "react-router-dom";
+import { ImageViewerProvider } from "../../../context/ImageViewerContext";
+import Home from "../../../screens/home/Home";
 
 describe("Home Component", () => {
-  test("renders presentation, experience, education, technologies Elements", () => {
+  test("should render presentation, experience, education, technologies Elements", () => {
     render(
       <MemoryRouter>
         <ImageViewerProvider>
