@@ -4,7 +4,7 @@ import { CompanyLogoProps } from "../../types/logo";
 const CompanyLogo = ({ company }: CompanyLogoProps) => {
   const { id, name, alt } = company;
   return (
-    <Link to={`/company/${id}`} style={{ textDecoration: "none" }}>
+    <Link to={`/company/${id}`} style={{ textDecoration: "none" }} data-testid="company-logo">
       <span className="clickable company-logo">
         <img
           src={`${process.env.PUBLIC_URL}/images/assets/${name}.png`}
