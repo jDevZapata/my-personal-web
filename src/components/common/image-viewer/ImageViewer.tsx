@@ -12,6 +12,7 @@ const ImageViewer = () => {
         <div
           className="backdrop centered-flex"
           onClick={() => setShowImageViewer(false)}
+          data-testid="backdrop"
         ></div>
       )}
       <div className={`image-popup ${showImageViewer ? "toUp" : "toDown"}`} data-testid="image-viewer">
