@@ -18,6 +18,6 @@ This project was created by me to establish my own website where individuals int
 
 This website is responsive and was crafted using CSS without libraries, with the intention of practicing animations, transitions, flexbox, and more.
 
-## Description
+## Next step
 
-Next step is to migrate this project to Next.js
+To migrate this project to Next.js
