@@ -14,9 +14,9 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer  data-testid="footer">
+    <footer data-testid="footer">
       <h4>Información de contacto</h4>
-      <div className="personal-information">
+      <div className="personal-information" data-testid="personal-information">
         <div className="info-container">
           <img src={emailIcon} alt="email" className="icon" />
           jhzapata.dev@gmail.com
@@ -31,23 +31,23 @@ const Footer = () => {
         </div>
       </div>
       <h4>Información profesional</h4>
-      <div className="social-media">
+      <div className="social-media" data-testid="social-media">
         <a
           href="https://www.linkedin.com/in/jesus-m%C3%BCller-38a9a72a6/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={linkedinIcon} alt="address" className="icon" />
+          <img src={linkedinIcon} alt="linkedin" className="icon" />
         </a>
         <a
           href="https://github.com/jDevZapata/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={githubIcon} alt="address" className="icon" />
+          <img src={githubIcon} alt="github" className="icon" />
         </a>
       </div>
-      {`© ${year} Jesus Müller - Frontend Developer`}
+      <div data-testid="copyright">{`© ${year} Jesús Müller - Frontend Developer`}</div>
     </footer>
   );
 };
