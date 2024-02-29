@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import Layout from "../../../layout/Layout";
-import { MemoryRouter } from "react-router";
+import Layout from "../../layout/Layout";
+import { MemoryRouter } from "react-router-dom";
 
 describe("Layout Component", () => {
-  test("renders header, footer and image-viewer", () => {
+  test("renders header, footer and image-viewer Elements", () => {
     render(
       <MemoryRouter>
         <Layout />

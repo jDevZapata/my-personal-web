@@ -16,7 +16,7 @@ const Education = () => {
   }, [setImgUrl, setTitle]);
 
   return (
-    <section id="education">
+    <section id="education" data-testid="education">
       <div className="university">
         <div className="title-contaier">
           <h2 className="title">Estudios Universitarios</h2>

@@ -5,7 +5,7 @@ import "./technologies.css";
 
 const Technologies = () => {
   return (
-    <section id="technologies">
+    <section id="technologies" data-testid="technologies">
       <div className="title-contaier">
         <h2 className="title">Technologias</h2>
         <img src={programmingIcon} alt="techs" className="icon"/>
