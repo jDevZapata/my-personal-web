@@ -35,7 +35,7 @@ const Presentation = () => {
           <span className="centered-img">
             <img
               src={process.env.PUBLIC_URL + "/images/profile.png"}
-              alt="my face"
+              alt="my-face"
               className="profile"
             />
           </span>

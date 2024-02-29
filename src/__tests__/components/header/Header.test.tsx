@@ -10,7 +10,7 @@ describe("GoBackButton component", () => {
       </MemoryRouter>
     );
 
-    const nameElement = screen.getByText("Jesús Müller");
-    expect(nameElement).toBeInTheDocument();
+    const ownersName = screen.getByText("Jesús Müller");
+    expect(ownersName).toBeInTheDocument();
   });
 });
