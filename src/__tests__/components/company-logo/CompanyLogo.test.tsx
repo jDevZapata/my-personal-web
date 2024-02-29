@@ -15,7 +15,7 @@ describe("CompanyLogo component", () => {
         <CompanyLogo company={company} />
       </MemoryRouter>
     );
-    const linkElement = screen.getByTestId("company-logo");
+    const linkElement = screen.getByTestId("company-logo-2013");
     expect(linkElement).toBeInTheDocument();
   });
 
