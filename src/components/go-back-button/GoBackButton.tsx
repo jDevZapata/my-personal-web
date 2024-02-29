@@ -4,7 +4,7 @@ import './gobackbutton.css';
 
 const GoBackButton = () => {
   return (
-    <Link to={"/"} style={{ textDecoration: "none" }} className="goBackLink">
+    <Link to={"/"} style={{ textDecoration: "none" }} className="goBackLink" data-testid="go-back-btn">
       <img src={left} alt="left" className="back_btn" />Volver
     </Link>
   );
